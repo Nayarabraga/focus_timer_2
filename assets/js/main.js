@@ -42,10 +42,10 @@ function selectSound(sound = '') {
     audio.pause();
     clearSelectedSound();
     const list = {
-        floresta: '/assets/audio/floresta.wav',
-        chuva: '/assets/audio/chuva.wav',
-        cafeteria: '/assets/audio/cafeteria.wav',
-        lareira: '/assets/audio/lareira.wav'
+        floresta: './assets/audio/floresta.wav',
+        chuva: './assets/audio/chuva.wav',
+        cafeteria: './assets/audio/cafeteria.wav',
+        lareira: './assets/audio/lareira.wav'
     };
     if (sound !== soundSelected) {
         soundSelected = sound;
