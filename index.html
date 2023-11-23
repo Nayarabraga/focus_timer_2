@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/main.js" defer></script>
+</head>
+
+<body class="main">
+
+    <div class="col space">
+        <h1 class="timer">
+            <span id="minutes">25</span><span>:</span><span id="seconds">00</span>
+        </h1>
+        <div class="btn-action">
+            <button class="circle" id="play" onclick="timerPlay()">
+                <img src="assets/img/play.svg" alt="Botão play" />
+            </button>
+            <button class="circle" id="stop" onclick="timerStop()">
+                <img src="assets/img/stop.svg" alt="Botão stop" />
+            </button>
+            <button class="circle" id="more" onclick="timerMore()">
+                <img src="assets/img/more.svg" alt="Botão aumentar" />
+            </button>
+            <button class="circle" id="less" onclick="timerLess()">
+                <img src="assets/img/less.svg" alt="Botão diminuir" />
+            </button>
+        </div>
+    </div>
+
+    <div class="col btn-sound">
+        <button class="card" id="floresta" onclick="selectSound('floresta')">
+            <img src="assets/img/card01.svg" alt="Som floresta" class="sound" />
+            <img src="assets/img/card01-active.svg" alt="Som floresta" class="selected" />
+        </button>
+        <button class="card" id="chuva" onclick="selectSound('chuva')">
+            <img src="assets/img/card02.svg" alt="Som chuva" class="sound" />
+            <img src="assets/img/card02-active.svg" alt="Som chuva" class="selected" />
+        </button>
+        <button class="card" id="cafeteria" onclick="selectSound('cafeteria')">
+            <img src="assets/img/card03.svg" alt="Som cafeteria" class="sound" />
+            <img src="assets/img/card03-active.svg" alt="Som cafeteria" class="selected" />
+        </button>
+        <button class="card" id="lareira" onclick="selectSound('lareira')">
+            <img src="assets/img/card04.svg" alt="Som lareira" class="sound" />
+            <img src="assets/img/card04-active.svg" alt="Som lareira" class="selected" />
+        </button>
+    </div>
+</body>
+
+</html>
